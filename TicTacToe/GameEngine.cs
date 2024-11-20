@@ -56,6 +56,7 @@
         {
             Array.Clear(board, 0, board.Length);
             gameStatistics.NumberOfMoves = 0;
+            CurrentPlayer = Player.Human;
         }
 
         public void ChangePlayer()

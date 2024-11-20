@@ -63,6 +63,7 @@ namespace TicTacToe
                           $"Computer: {gameStatistics.ComputerWins}\n" +
                           $"Draws: {gameStatistics.Draws}  " +
                           $"Total Games: {gameStatistics.TotalGames}";
+            TurnUI.Content = (gameEngine.CurrentPlayer == Player.Human) ? "Human's Turn" : "Computer's Turn";
         }
 
         private Button GetIndexButton(short index)
